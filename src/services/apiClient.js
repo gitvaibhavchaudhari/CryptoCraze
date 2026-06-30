@@ -1,4 +1,9 @@
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:8787/api";
+function normalizeApiBaseUrl(value) {
+  const baseUrl = (value || "http://localhost:8787/api").replace(/\/+$/, "");
+  return baseUrl.endsWith("/api") ? baseUrl : `${baseUrl}/api`;
+}
+
+const API_BASE = normalizeApiBaseUrl(import.meta.env.VITE_API_BASE_URL);
 
 export async function apiRequest(path, options = {}) {
   let response;
