@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoCraze | Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-page" data-page="cart">
+  <div class="background-effects" aria-hidden="true">
+    <span class="glow glow-primary"></span>
+    <span class="glow glow-secondary"></span>
+    <span class="grid-overlay"></span>
+  </div>
+
+  <div class="app-shell">
+    <header class="topbar glass-card">
+      <a class="brand" href="dashboard.html">
+        <img class="brand-logo" src="assets/crypto-logo.png" alt="CryptoCraze logo">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="topnav" data-nav-menu>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="buy.html" class="nav-link">Buy Crypto</a>
+        <a href="cart.html" class="nav-link is-active">Cart <span id="navCartCount" class="nav-badge">0</span></a>
+        <button class="button button-secondary" type="button" data-action="logout">Logout</button>
+      </nav>
+    </header>
+
+    <main class="app-content">
+      <section class="hero-grid cart-hero">
+        <article class="hero-card glass-card">
+          <p class="panel-kicker">Your Order</p>
+          <h1>Review your crypto cart before checkout.</h1>
+          <p class="hero-copy">
+            Adjust quantities, remove assets, and see a live total calculated from the latest available pricing.
+          </p>
+        </article>
+
+        <article class="highlight-card glass-card">
+          <p class="panel-kicker">Cart Summary</p>
+          <div class="session-metric">
+            <span>Total Coins</span>
+            <strong id="cartSummaryItems">0</strong>
+          </div>
+          <div class="session-metric">
+            <span>Estimated Total</span>
+            <strong id="cartSummaryValue">$0.00</strong>
+          </div>
+          <a class="button button-primary button-full" href="buy.html">Add More Coins</a>
+        </article>
+      </section>
+
+      <div id="cartNotice" class="inline-notice" hidden></div>
+      <section class="cart-layout">
+        <article class="glass-card cart-list-card">
+          <div class="section-head compact">
+            <div>
+              <p class="panel-kicker">Selected Assets</p>
+              <h2>Cart Items</h2>
+            </div>
+          </div>
+          <div id="cartLoader" class="section-loader is-visible">
+            <span class="spinner"></span>
+            <p>Preparing your cart...</p>
+          </div>
+          <div id="cartItems" class="cart-items"></div>
+        </article>
+
+        <aside class="glass-card checkout-card">
+          <p class="panel-kicker">Checkout Preview</p>
+          <div class="checkout-line">
+            <span>Assets</span>
+            <strong id="checkoutAssets">0</strong>
+          </div>
+          <div class="checkout-line">
+            <span>Total Units</span>
+            <strong id="checkoutUnits">0</strong>
+          </div>
+          <div class="checkout-line total">
+            <span>Estimated Cost</span>
+            <strong id="checkoutTotal">$0.00</strong>
+          </div>
+          <button id="checkoutButton" class="button button-primary button-full" type="button">Proceed to Checkout</button>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

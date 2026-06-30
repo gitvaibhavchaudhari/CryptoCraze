@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoCraze | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page" data-page="login">
+  <div class="background-effects" aria-hidden="true">
+    <span class="glow glow-primary"></span>
+    <span class="glow glow-secondary"></span>
+    <span class="grid-overlay"></span>
+  </div>
+
+  <main class="auth-shell">
+    <section class="auth-copy">
+      <a class="brand" href="home.html">
+        <img class="brand-logo" src="assets/crypto-logo.png" alt="CryptoCraze logo">
+      </a>
+      <span class="eyebrow">Trade smarter. Move faster.</span>
+      <h1>Step into a premium crypto experience built for modern traders.</h1>
+      <p>
+        Track live coin prices, manage your portfolio with ease, and stay ahead of market trends all in one sleek platform.
+      </p>
+
+      <div class="feature-stack">
+        <article class="feature-card">
+          <h2>Live Market Signals</h2>
+          <p>Monitor Bitcoin, Ethereum, Dogecoin, and more with fresh pricing and trend indicators.</p>
+        </article>
+        <article class="feature-card">
+          <h2>Fast Portfolio Actions</h2>
+          <p>Add coins to your cart instantly and manage quantities with smooth, responsive controls.</p>
+        </article>
+      </div>
+
+      <section class="market-preview glass-card">
+        <div class="section-head compact">
+          <div>
+            <p class="panel-kicker">Live Preview</p>
+            <h2>Coin market dashboard</h2>
+          </div>
+          <button id="previewRefreshButton" class="button button-secondary" type="button">Refresh</button>
+        </div>
+
+        <div id="publicMarketNotice" class="inline-notice" hidden></div>
+        <div id="publicMarketLoader" class="section-loader is-visible">
+          <span class="spinner"></span>
+          <p>Loading market preview...</p>
+        </div>
+        <section id="publicMarketCards" class="market-grid compact-market-grid" aria-live="polite"></section>
+      </section>
+    </section>
+
+    <section class="auth-panel glass-card">
+      <div class="panel-header">
+        <p class="panel-kicker">Welcome Back</p>
+        <h2>Login to CryptoCraze</h2>
+        <p>Use your account details to access the dashboard.</p>
+      </div>
+
+      <form id="loginForm" class="auth-form" novalidate>
+        <label class="field">
+          <span>Email Address</span>
+          <input type="email" id="loginEmail" name="email" placeholder="you@example.com" autocomplete="email">
+          <small class="field-error" data-error-for="email"></small>
+        </label>
+
+        <label class="field">
+          <span>Password</span>
+          <input type="password" id="loginPassword" name="password" placeholder="Enter password" autocomplete="current-password">
+          <small class="field-error" data-error-for="password"></small>
+        </label>
+
+        <div id="loginMessage" class="form-message" aria-live="polite"></div>
+
+        <button class="button button-primary button-full" type="submit">Login</button>
+      </form>
+
+      <p class="panel-footer">
+        New to CryptoCraze?
+        <a href="signup.html">Create an account</a>
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

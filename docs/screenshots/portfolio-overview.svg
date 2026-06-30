@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" fill="none">
+  <rect width="1280" height="720" rx="32" fill="#09090B"/>
+  <rect x="42" y="42" width="1196" height="636" rx="28" fill="#121217" stroke="#2B2B33"/>
+  <text x="90" y="110" fill="#F97316" font-family="Arial" font-size="24" font-weight="700">CryptoCraze Portfolio</text>
+  <rect x="82" y="156" width="352" height="140" rx="28" fill="#16161C" stroke="#31313B"/>
+  <rect x="464" y="156" width="352" height="140" rx="28" fill="#16161C" stroke="#31313B"/>
+  <rect x="846" y="156" width="352" height="140" rx="28" fill="#16161C" stroke="#31313B"/>
+  <text x="112" y="214" fill="#FFFFFF" font-family="Arial" font-size="26" font-weight="700">Investment</text>
+  <text x="494" y="214" fill="#FFFFFF" font-family="Arial" font-size="26" font-weight="700">Current Value</text>
+  <text x="876" y="214" fill="#FFFFFF" font-family="Arial" font-size="26" font-weight="700">Profit / Loss</text>
+  <rect x="82" y="338" width="1116" height="284" rx="28" fill="#16161C" stroke="#31313B"/>
+  <text x="112" y="392" fill="#FFFFFF" font-family="Arial" font-size="30" font-weight="700">Holdings table</text>
+  <text x="112" y="436" fill="#9CA3AF" font-family="Arial" font-size="22">Quantity, avg buy price, live price, and dynamic P/L analytics</text>
+</svg>

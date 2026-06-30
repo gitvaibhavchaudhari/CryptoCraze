@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, sans-serif;
+  --cc-bg-primary: #100d28;
+  --cc-bg-secondary: #1a1446;
+  --cc-blue: #3618e6;
+  --cc-purple: #8822d2;
+  --cc-pink: #e127e5;
+  --cc-text-primary: #f7f7f8;
+  --cc-text-secondary: #b8b5d6;
+  --cc-border: rgba(136, 34, 210, 0.3);
+  --cc-glow: rgba(225, 39, 229, 0.25);
+  background:
+    radial-gradient(circle at top left, rgba(225, 39, 229, 0.12), transparent 30%),
+    radial-gradient(circle at 85% 15%, rgba(54, 24, 230, 0.16), transparent 24%),
+    linear-gradient(180deg, var(--cc-bg-primary) 0%, #130f36 54%, var(--cc-bg-primary) 100%);
+  color: var(--cc-text-primary);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(225, 39, 229, 0.12), transparent 30%),
+    radial-gradient(circle at 85% 15%, rgba(54, 24, 230, 0.16), transparent 24%),
+    linear-gradient(180deg, var(--cc-bg-primary) 0%, #130f36 54%, var(--cc-bg-primary) 100%);
+  color: var(--cc-text-primary);
+}
+
+#root {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button:not(:disabled),
+a[href],
+[role="button"] {
+  cursor: pointer;
+}
+
+::selection {
+  background: rgba(225, 39, 229, 0.35);
+  color: var(--cc-text-primary);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(136, 34, 210, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(136, 34, 210, 0.12) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.glass-panel {
+  border: 1px solid var(--cc-border);
+  background: linear-gradient(180deg, rgba(26, 20, 70, 0.95), rgba(26, 20, 70, 0.82));
+  box-shadow: 0 24px 70px var(--cc-glow);
+  backdrop-filter: blur(20px);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--cc-text-primary) 0%, var(--cc-pink) 42%, var(--cc-blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(225, 39, 229, 0.55) rgba(26, 20, 70, 0.55);
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: rgba(26, 20, 70, 0.55);
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--cc-pink);
+  border-radius: 999px;
+}
+
+.bg-slate-950,
+.bg-slate-950\/80,
+.bg-slate-950\/85 {
+  background-color: var(--cc-bg-primary) !important;
+}
+
+.bg-slate-950\/70,
+.bg-slate-950\/75 {
+  background-color: rgba(26, 20, 70, 0.86) !important;
+}
+
+.bg-white\/4,
+.bg-white\/5,
+.bg-white\/\[0\.04\] {
+  background-color: rgba(26, 20, 70, 0.72) !important;
+}
+
+.bg-white\/6,
+.bg-white\/8,
+.bg-white\/10 {
+  background-color: rgba(26, 20, 70, 0.86) !important;
+}
+
+.bg-blue-500,
+.hover\:bg-blue-400:hover {
+  background-color: var(--cc-purple) !important;
+}
+
+.bg-cyan-300\/10,
+.bg-cyan-300\/15,
+.hover\:bg-cyan-300\/10:hover,
+.hover\:bg-cyan-300\/15:hover,
+.hover\:bg-cyan-400\/10:hover {
+  background-color: rgba(136, 34, 210, 0.16) !important;
+}
+
+.bg-rose-500\/10,
+.bg-rose-500\/12,
+.hover\:bg-rose-500\/20:hover {
+  background-color: rgba(225, 39, 229, 0.14) !important;
+}
+
+.border-white\/8,
+.border-white\/10,
+.border-white\/20,
+.border-cyan-300\/20,
+.border-cyan-300\/30,
+.border-cyan-300\/40,
+.border-cyan-300\/50,
+.border-cyan-300\/60,
+.border-rose-400\/30,
+.border-rose-500\/20,
+.border-rose-500\/30 {
+  border-color: var(--cc-border) !important;
+}
+
+.hover\:border-white\/20:hover,
+.hover\:border-cyan-300\/40:hover,
+.hover\:border-cyan-300\/50:hover {
+  border-color: var(--cc-blue) !important;
+}
+
+.focus\:border-cyan-300\/60:focus,
+.focus-within\:border-cyan-300\/70:focus-within {
+  border-color: var(--cc-blue) !important;
+}
+
+.text-white,
+.text-slate-100 {
+  color: var(--cc-text-primary) !important;
+}
+
+.text-slate-200,
+.text-slate-300,
+.text-slate-400,
+.text-slate-500,
+.placeholder\:text-slate-600::placeholder {
+  color: var(--cc-text-secondary) !important;
+}
+
+.text-cyan-100,
+.text-cyan-200,
+.text-cyan-200\/90,
+.text-cyan-300,
+.hover\:text-cyan-200:hover,
+.hover\:text-cyan-300:hover {
+  color: var(--cc-pink) !important;
+}
+
+.text-blue-200 {
+  color: var(--cc-purple) !important;
+}
+
+.text-rose-200,
+.text-rose-300 {
+  color: var(--cc-pink) !important;
+}
+
+.accent-cyan-400 {
+  accent-color: var(--cc-pink) !important;
+}
+
+.shadow-blue-500\/20,
+.shadow-black\/50 {
+  --tw-shadow-color: var(--cc-glow) !important;
+}

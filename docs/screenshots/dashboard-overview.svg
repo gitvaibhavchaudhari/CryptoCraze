@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" fill="none">
+  <rect width="1280" height="720" rx="32" fill="#09090B"/>
+  <rect x="42" y="42" width="1196" height="636" rx="28" fill="#121217" stroke="#2B2B33"/>
+  <rect x="82" y="82" width="250" height="556" rx="28" fill="#15151B" stroke="#31313B"/>
+  <text x="112" y="128" fill="#F97316" font-family="Arial" font-size="24" font-weight="700">AppShell Sidebar</text>
+  <text x="112" y="176" fill="#9CA3AF" font-family="Arial" font-size="22">Dashboard, Buy, Portfolio, Watchlist</text>
+  <rect x="372" y="82" width="808" height="72" rx="24" fill="#15151B" stroke="#31313B"/>
+  <text x="408" y="128" fill="#FFFFFF" font-family="Arial" font-size="30" font-weight="700">CryptoCraze Workspace</text>
+  <rect x="372" y="190" width="192" height="140" rx="24" fill="#17171E"/>
+  <rect x="584" y="190" width="192" height="140" rx="24" fill="#17171E"/>
+  <rect x="796" y="190" width="192" height="140" rx="24" fill="#17171E"/>
+  <rect x="1008" y="190" width="172" height="140" rx="24" fill="#17171E"/>
+  <text x="396" y="246" fill="#FFFFFF" font-family="Arial" font-size="24" font-weight="700">Investment</text>
+  <text x="396" y="284" fill="#9CA3AF" font-family="Arial" font-size="18">Current value / P&amp;L / cart size</text>
+  <rect x="372" y="362" width="808" height="276" rx="28" fill="#15151B" stroke="#31313B"/>
+  <text x="404" y="416" fill="#FFFFFF" font-family="Arial" font-size="30" font-weight="700">Live market table</text>
+  <text x="404" y="460" fill="#9CA3AF" font-family="Arial" font-size="22">Search, filter, watchlist toggle, add to cart, detail links</text>
+</svg>

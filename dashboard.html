@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoCraze | Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-page" data-page="dashboard">
+  <div class="background-effects" aria-hidden="true">
+    <span class="glow glow-primary"></span>
+    <span class="glow glow-secondary"></span>
+    <span class="grid-overlay"></span>
+  </div>
+
+  <div class="app-shell">
+    <header class="topbar glass-card">
+      <a class="brand" href="dashboard.html">
+        <img class="brand-logo" src="assets/crypto-logo.png" alt="CryptoCraze logo">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="topnav" data-nav-menu>
+        <a href="dashboard.html" class="nav-link is-active">Dashboard</a>
+        <a href="buy.html" class="nav-link">Buy Crypto</a>
+        <a href="cart.html" class="nav-link">Cart <span id="navCartCount" class="nav-badge">0</span></a>
+        <button class="button button-secondary" type="button" data-action="logout">Logout</button>
+      </nav>
+    </header>
+
+    <main class="app-content">
+      <section class="hero-grid">
+        <article class="hero-card glass-card">
+          <p class="panel-kicker">Control Center</p>
+          <h1 id="welcomeMessage">Welcome back</h1>
+          <p class="hero-copy">
+            Track live market movement, review today's strongest signals, and move into your buy flow with confidence.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="buy.html">Buy Crypto</a>
+            <a class="button button-ghost" href="cart.html">Open Cart</a>
+          </div>
+        </article>
+
+        <article class="highlight-card glass-card">
+          <p class="panel-kicker">Session</p>
+          <div class="session-metric">
+            <span>User</span>
+            <strong id="sessionUserName">Trader</strong>
+          </div>
+          <div class="session-metric">
+            <span>Tracked Coins</span>
+            <strong>BTC, ETH, DOGE</strong>
+          </div>
+          <div class="session-metric">
+            <span>Cart Value</span>
+            <strong id="dashboardCartValue">$0.00</strong>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-head">
+        <div>
+          <p class="panel-kicker">Market Overview</p>
+          <h2>Live cryptocurrency prices</h2>
+        </div>
+        <button id="refreshPricesButton" class="button button-secondary" type="button">Refresh</button>
+      </section>
+
+      <div id="dashboardNotice" class="inline-notice" hidden></div>
+      <div id="dashboardLoader" class="section-loader is-visible">
+        <span class="spinner"></span>
+        <p>Loading market data...</p>
+      </div>
+      <section id="marketCards" class="market-grid" aria-live="polite"></section>
+
+      <section class="analytics-grid">
+        <article class="glass-card chart-card">
+          <div class="section-head compact">
+            <div>
+              <p class="panel-kicker">Bitcoin Pulse</p>
+              <h2 id="chartTitle">Monthly price chart</h2>
+            </div>
+            <div class="chart-range-switch" role="tablist" aria-label="Chart range selector">
+              <button class="chart-range-button" type="button" data-chart-range="day" data-chart-scope="dashboard">Day</button>
+              <button class="chart-range-button is-active" type="button" data-chart-range="month" data-chart-scope="dashboard">Month</button>
+              <button class="chart-range-button" type="button" data-chart-range="year" data-chart-scope="dashboard">Year</button>
+            </div>
+          </div>
+          <p id="chartMeta" class="chart-meta">View Bitcoin movement across different time ranges.</p>
+          <div class="chart-wrap">
+            <canvas id="priceChart" aria-label="Bitcoin price chart"></canvas>
+          </div>
+        </article>
+
+        <article class="glass-card insights-card">
+          <p class="panel-kicker">Quick Insights</p>
+          <div id="trendSummary" class="insight-list"></div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

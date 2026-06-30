@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoCraze | Live Market</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-page" data-page="home">
+  <div class="background-effects" aria-hidden="true">
+    <span class="glow glow-primary"></span>
+    <span class="glow glow-secondary"></span>
+    <span class="grid-overlay"></span>
+  </div>
+
+  <div class="app-shell">
+    <header class="topbar glass-card">
+      <a class="brand" href="home.html">
+        <img class="brand-logo" src="assets/crypto-logo.png" alt="CryptoCraze logo">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="topnav" data-nav-menu>
+        <a href="#market-overview" class="nav-link">Market</a>
+        <a href="#public-chart" class="nav-link">Chart</a>
+        <a href="login.html" class="nav-link">Login</a>
+        <a class="button button-primary" href="signup.html">Get Started</a>
+      </nav>
+    </header>
+
+    <main class="app-content">
+      <section class="hero-grid">
+        <article class="hero-card glass-card">
+          <p class="panel-kicker">Welcome To CryptoCraze</p>
+          <h1>See the crypto market the moment you arrive.</h1>
+          <p class="hero-copy">
+            Explore live prices, scan momentum, and switch Bitcoin charts across day,
+            month, and year views before logging in.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="login.html">Login</a>
+            <a class="button button-ghost" href="signup.html">Create Account</a>
+          </div>
+        </article>
+
+        <article class="highlight-card glass-card">
+          <p class="panel-kicker">Market Snapshot</p>
+          <div class="session-metric">
+            <span>Tracked Coins</span>
+            <strong>BTC, ETH, DOGE</strong>
+          </div>
+          <div class="session-metric">
+            <span>Chart Modes</span>
+            <strong>Day / Month / Year</strong>
+          </div>
+          <div class="session-metric">
+            <span>Access</span>
+            <strong>Public Live View</strong>
+          </div>
+        </article>
+      </section>
+
+      <section id="market-overview" class="section-head">
+        <div>
+          <p class="panel-kicker">Market Overview</p>
+          <h2>Live cryptocurrency dashboard</h2>
+        </div>
+        <button id="homeRefreshButton" class="button button-secondary" type="button">Refresh</button>
+      </section>
+
+      <div id="homeMarketNotice" class="inline-notice" hidden></div>
+      <div id="homeMarketLoader" class="section-loader is-visible">
+        <span class="spinner"></span>
+        <p>Loading live market dashboard...</p>
+      </div>
+      <section id="homeMarketCards" class="market-grid" aria-live="polite"></section>
+
+      <section class="analytics-grid">
+        <article id="public-chart" class="glass-card chart-card">
+          <div class="section-head compact">
+            <div>
+              <p class="panel-kicker">Bitcoin Pulse</p>
+              <h2 id="publicChartTitle">Monthly price chart</h2>
+            </div>
+            <div class="chart-range-switch" role="tablist" aria-label="Public chart range selector">
+              <button class="chart-range-button" type="button" data-chart-range="day" data-chart-scope="public">Day</button>
+              <button class="chart-range-button is-active" type="button" data-chart-range="month" data-chart-scope="public">Month</button>
+              <button class="chart-range-button" type="button" data-chart-range="year" data-chart-scope="public">Year</button>
+            </div>
+          </div>
+          <p id="publicChartMeta" class="chart-meta">Switch between day, month, and year market movement before logging in.</p>
+          <div class="chart-wrap">
+            <canvas id="publicPriceChart" aria-label="Bitcoin public market chart"></canvas>
+          </div>
+        </article>
+
+        <article class="glass-card insights-card">
+          <p class="panel-kicker">Why CryptoCraze</p>
+          <div class="insight-list">
+            <article class="insight-item">
+              <h3>Live before login</h3>
+              <p>Visitors can review the market dashboard and chart immediately on the public homepage.</p>
+            </article>
+            <article class="insight-item">
+              <h3>Fast trade flow</h3>
+              <p>Create an account, sign in, and move into buying and cart management without backend setup.</p>
+            </article>
+            <article class="insight-item">
+              <h3>Premium interface</h3>
+              <p>Enjoy a clean black-and-orange layout inspired by modern crypto platforms.</p>
+            </article>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

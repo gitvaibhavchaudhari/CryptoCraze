@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoCraze | Buy Crypto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-page" data-page="buy">
+  <div class="background-effects" aria-hidden="true">
+    <span class="glow glow-primary"></span>
+    <span class="glow glow-secondary"></span>
+    <span class="grid-overlay"></span>
+  </div>
+
+  <div class="app-shell">
+    <header class="topbar glass-card">
+      <a class="brand" href="dashboard.html">
+        <img class="brand-logo" src="assets/crypto-logo.png" alt="CryptoCraze logo">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="topnav" data-nav-menu>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="buy.html" class="nav-link is-active">Buy Crypto</a>
+        <a href="cart.html" class="nav-link">Cart <span id="navCartCount" class="nav-badge">0</span></a>
+        <button class="button button-secondary" type="button" data-action="logout">Logout</button>
+      </nav>
+    </header>
+
+    <main class="app-content">
+      <section class="hero-grid buy-hero">
+        <article class="hero-card glass-card">
+          <p class="panel-kicker">Trade Desk</p>
+          <h1>Buy from today's top crypto movers.</h1>
+          <p class="hero-copy">
+            Compare current prices, scan 24-hour momentum, and add coins to your cart in a single click.
+          </p>
+        </article>
+
+        <article class="highlight-card glass-card">
+          <p class="panel-kicker">Cart Snapshot</p>
+          <div class="session-metric">
+            <span>Items</span>
+            <strong id="buyCartItems">0</strong>
+          </div>
+          <div class="session-metric">
+            <span>Total</span>
+            <strong id="buyCartValue">$0.00</strong>
+          </div>
+          <a class="button button-primary button-full" href="cart.html">Go to Cart</a>
+        </article>
+      </section>
+
+      <section class="section-head">
+        <div>
+          <p class="panel-kicker">Available Assets</p>
+          <h2>Choose your next buy</h2>
+        </div>
+        <button id="refreshBuyButton" class="button button-secondary" type="button">Refresh List</button>
+      </section>
+
+      <div id="buyNotice" class="inline-notice" hidden></div>
+      <div id="buyLoader" class="section-loader is-visible">
+        <span class="spinner"></span>
+        <p>Fetching coin prices...</p>
+      </div>
+      <section id="coinCatalog" class="catalog-grid" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

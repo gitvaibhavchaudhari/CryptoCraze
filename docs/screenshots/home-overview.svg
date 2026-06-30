@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" fill="none">
+  <rect width="1280" height="720" rx="32" fill="#09090B"/>
+  <rect x="42" y="42" width="1196" height="636" rx="28" fill="#121217" stroke="#2B2B33"/>
+  <rect x="82" y="82" width="220" height="56" rx="20" fill="#19191E"/>
+  <text x="100" y="116" fill="#F97316" font-family="Arial" font-size="24" font-weight="700">CryptoCraze Public Home</text>
+  <rect x="82" y="172" width="700" height="214" rx="30" fill="#16161C" stroke="#31313B"/>
+  <text x="112" y="232" fill="#FFFFFF" font-family="Arial" font-size="42" font-weight="700">Live market hero with onboarding CTA</text>
+  <text x="112" y="280" fill="#9CA3AF" font-family="Arial" font-size="24">Public dashboard preview, market cards, and Bitcoin chart ranges.</text>
+  <rect x="820" y="172" width="360" height="214" rx="30" fill="#16161C" stroke="#31313B"/>
+  <text x="850" y="230" fill="#FFFFFF" font-family="Arial" font-size="28" font-weight="700">Today's crypto pulse</text>
+  <text x="850" y="278" fill="#9CA3AF" font-family="Arial" font-size="22">BTC, ETH, SOL, DOGE snapshot</text>
+  <rect x="82" y="430" width="680" height="192" rx="30" fill="#16161C" stroke="#31313B"/>
+  <text x="112" y="490" fill="#FFFFFF" font-family="Arial" font-size="30" font-weight="700">Bitcoin public chart</text>
+  <text x="112" y="536" fill="#9CA3AF" font-family="Arial" font-size="22">7d / 30d toggles with responsive Recharts area graph</text>
+  <rect x="820" y="430" width="360" height="192" rx="30" fill="#16161C" stroke="#31313B"/>
+  <text x="850" y="490" fill="#FFFFFF" font-family="Arial" font-size="30" font-weight="700">Interview-ready notes</text>
+  <text x="850" y="536" fill="#9CA3AF" font-family="Arial" font-size="22">Stack, auth mode, and project highlights</text>
+</svg>
