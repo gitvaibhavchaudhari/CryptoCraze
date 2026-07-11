@@ -135,14 +135,6 @@ npm run preview
 - Firestore stores user watchlists, carts, and portfolio state when Firebase is configured.
 - In demo mode, localStorage is used so the app still runs without cloud setup.
 
-## Resume Talking Points
-
-- Designed a modular React + Vite architecture for a crypto platform use case.
-- Integrated live CoinGecko market data with search, filtering, and chart visualizations.
-- Built user persistence flows for watchlist, cart, and portfolio analytics.
-- Implemented a backend abstraction that supports Firebase production mode and demo mode fallback.
-- Added production-focused deployment, environment variable, and routing configuration.
-
 ## Notes
 
 - The active application entry is the React/Vite app under `src/`.
