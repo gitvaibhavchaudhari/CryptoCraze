@@ -2,6 +2,9 @@
 
 CryptoCraze is a production-style cryptocurrency platform built with React, Vite, Tailwind CSS, Firebase authentication, Firestore persistence, CoinGecko market data, Razorpay payments, and Recharts visualizations. It is designed to be strong enough for software engineering resumes, technical interviews, and campus placement showcases.
 
+## Live Demo
+   (https://cryptocraze-web.onrender.com/)
+
 ## Features
 
 - Secure signup and login flow with Firebase Auth support.
